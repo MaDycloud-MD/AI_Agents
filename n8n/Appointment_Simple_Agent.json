@@ -47,8 +47,8 @@
           "conditions": [
             {
               "id": "e25be16b-c446-4e7c-870f-f513402afbd1",
-              "leftValue": "={{ $json.Date }}",
-              "rightValue": "={{ new Date(new Date($json.Date).setDate(new Date($json.Date).getDate() + 7)).toISOString().slice(0,10) }} ",
+              "leftValue": "={{ $json.Date}}",
+              "rightValue": "={{ new Date(new Date($json.submittedAt).setDate(new Date($json.submittedAt).getDate() + 7)).toISOString().slice(0,10) }} ",
               "operator": {
                 "type": "dateTime",
                 "operation": "beforeOrEquals"
@@ -136,11 +136,11 @@
       ]
     }
   },
-  "active": true,
+  "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "c2694cc9-79c0-4c06-81fd-a7ad31bf41e9",
+  "versionId": "231cb9e3-2a19-4534-be29-e5fb20448654",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "4565a78eda52c46e32855e1ca89db2b3dc7f1d1e69f4d17afa46bf1ad6e16b86"
